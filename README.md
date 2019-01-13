@@ -1,6 +1,6 @@
 # Virus Outbreak Simulator in Angular
 
-<img src="https://imgur.com/a/Wh1p314" alt="Screenshot" height="100"/></a>
+![Screenshot](https://imgur.com/a/Wh1p314)
 
 Just for fun, I created a virus outbreak simulator in Angular. The simulation holds three types of persons:
 
