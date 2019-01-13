@@ -1,0 +1,56 @@
+:host {
+  display: flex;
+  flex-direction: row;
+
+  .left {
+    background-color: azure;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-right: 10px;
+    flex: 1;
+    padding: 10px;
+
+    .legend {
+      border: 1px solid black;
+      border-radius: 10px;
+      padding: 0 10px;
+      margin-top: 10px;
+
+      .type {
+        display: block;
+
+        .doctor {
+          display: inline-block;
+          height: 20px;
+          width: 20px;
+          background-color: blue;
+        }
+
+        .patient {
+          display: inline-block;
+          height: 20px;
+          width: 20px;
+          background-color: green;
+
+          &.infected {
+            background-color: red;
+          }
+        }
+
+        p {
+          display: inline-block;
+          margin-left: 10px;
+        }
+      }
+
+    }
+  }
+
+  .right {
+    background-color: lightblue;
+    border: 1px solid black;
+    border-radius: 10px;
+    flex: 6;
+    padding: 10px;
+  }
+}

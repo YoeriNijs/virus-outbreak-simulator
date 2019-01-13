@@ -1,0 +1,4 @@
+<div class="container">
+  <p>{{ getLabel() }}: {{ value }}</p>
+  <input [disabled]="isDisabled()" type="range" min="1" max="{{ max }}" value="{{ value }}" class="slider" (change)="change($event)">
+</div>

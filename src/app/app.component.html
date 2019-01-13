@@ -1,0 +1,31 @@
+<div class="left">
+    <app-slider [type]="'doctors'" [label]="'Number of doctors'"></app-slider>
+    <app-slider [type]="'patients'" [label]="'Number of patients'"></app-slider>
+    <app-slider [type]="'infected'" [label]="'Number of infected patients'"></app-slider>
+    <app-slider [type]="'infectiousness'" [label]="'Infectiousness of virus'"></app-slider>
+    <app-slider [type]="'cycles'" [label]="'Cycles before patient death'"></app-slider>
+
+    <button [disabled]="currentState === 'start'" (click)="start()">Start</button>
+    <button *ngIf="currentState === 'start'" (click)="stop()">Stop</button>
+    <button *ngIf="currentState !== 'start'" (click)="reset()">Reset</button>
+
+    <div class="legend">
+        <h3>Legend</h3>
+        <div class="type">
+            <div class="doctor"></div>
+            <p>Doctor</p>
+        </div>
+        <div class="type">
+            <div class="patient"></div>
+            <p>Doctor</p>
+        </div>
+        <div class="type">
+            <div class="patient infected"></div>
+            <p>Infected patient</p>
+        </div>
+    </div>
+</div>
+
+<div class="right">
+    <app-world [state]="currentState" (stateChange)="onStateChange($event)"></app-world>
+</div>

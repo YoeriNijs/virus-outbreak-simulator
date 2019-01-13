@@ -1,0 +1,1 @@
+export type State = 'start' | 'reset' | 'stop' | 'undefined';

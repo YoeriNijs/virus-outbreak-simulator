@@ -1,0 +1,17 @@
+<table class="world">
+  <tbody>
+    <tr class="row" *ngFor="let position of positions; let y = index" [attr.data-index]="y">
+      <td *ngFor="let x of position">
+        <div class="doctor" *ngIf="isDoctorOnPosition([x, y])"></div>
+        <div class="patient" [ngClass]="{'infected' : isPersonOnPositionInfected([x, y])}" *ngIf="isPatientOnPosition([x, y])"></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="stats" *ngIf="state === 'start' || state === 'stop'">
+  <p>Cycle: {{ getCycle() }}</p>
+  <p>Infected: {{ getNumberInfected() }}</p>
+  <p>Cured: {{ getNumberOfCured() }}</p>
+  <p>Deaths: {{ getNumberDeath() }}</p>
+</div>
