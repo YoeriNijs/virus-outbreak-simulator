@@ -1,5 +1,7 @@
 # Virus Outbreak Simulator in Angular
 
+<img src="https://imgur.com/a/Wh1p314" alt="Screenshot" height="100"/></a>
+
 Just for fun, I created a virus outbreak simulator in Angular. The simulation holds three types of persons:
 
   - Patients: just the random people. They will not die soon by a deadly virus;
@@ -14,3 +16,6 @@ As God, you can play with some initial parameters, such as:
   - The number of infected patients;
   - The chance of being infected (i.e. infectiousness);
   - The number of cycles (i.e. moves) before an infectied patient dies. 
+  
+# More
+- [Stackblitz](https://stackblitz.com/edit/angular-stgen7) (may not be up to date)
