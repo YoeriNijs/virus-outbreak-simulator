@@ -5,7 +5,7 @@
     <app-slider [type]="'infectiousness'" [label]="'Infectiousness of virus'"></app-slider>
     <app-slider [type]="'cycles'" [label]="'Cycles before patient death'"></app-slider>
 
-    <input type="checkbox" name="restart" (change)="this.autoRestart = !this.autoRestart"> Restart automatically
+    <input type="checkbox" name="restart" (change)="this.autoRestart = !this.autoRestart"> Restart automatically<br />
     <button *ngIf="currentState === 'undefined' || currentState === 'reset'" (click)="start()">Start</button>
     <button *ngIf="currentState === 'start' || currentState === 'restart'" (click)="stop()">Stop</button>
     <button *ngIf="currentState === 'stop'" (click)="restart()">Restart</button>
