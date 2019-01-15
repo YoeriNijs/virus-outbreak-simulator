@@ -14,7 +14,7 @@ As God, you can play with some initial parameters, such as:
   - The number of doctors;
   - The number of patients;
   - The number of infected patients;
-  - The chance of being infected (i.e. infectiousness);
+  - The likelihood of being infected (i.e. infectiousness);
   - The number of cycles (i.e. moves) before an infectied patient dies. 
   
 # More
