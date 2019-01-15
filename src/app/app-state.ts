@@ -1,1 +1,1 @@
-export type State = 'start' | 'reset' | 'stop' | 'undefined';
+export type State = 'start' | 'restart' | 'reset' | 'stop' | 'undefined';

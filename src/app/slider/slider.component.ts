@@ -13,7 +13,7 @@ export class SliderComponent implements OnInit, DoCheck {
   @Input() type: SliderType;
   @Input() label: string = 'Unknown';
 
-  max = 100;
+  max = 0;
   value = defaultValue;
 
   private disabled = false;
@@ -50,6 +50,7 @@ export class SliderComponent implements OnInit, DoCheck {
   }
 
   calcMax(): void {
+    this.max = this.config.getMaxAmountOfSlider();
     if (this.type === 'infected') {
       const patientSlider = this.config.getSliderByType('patients');
       if (patientSlider) {

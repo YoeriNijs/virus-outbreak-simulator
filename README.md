@@ -1,8 +1,8 @@
-# Virus Outbreak Simulator in Angular
+# Virus Outbreak Simulator with Naive Bayes classifier in Angular
 
 ![Screenshot](https://i.imgur.com/VBWCfqE.png)
 
-Just for fun, I created a virus outbreak simulator in Angular. The simulation holds three types of persons:
+Just for fun, I created a virus outbreak simulator with Naive Bayes classifier in Angular. The simulation holds three types of persons:
 
   - Patients: just the random people. They will not die soon by a deadly virus;
   - Infected patients: the really sick people, infected by a deadly virus;

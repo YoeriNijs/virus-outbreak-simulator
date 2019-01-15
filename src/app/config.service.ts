@@ -8,6 +8,7 @@ import {SliderType} from "./slider/slider-type";
 export class ConfigService {
 
   private sliders: SliderComponent[] = [];
+  private sliderMaxAmount = 100;
 
   register(slider: SliderComponent) {
     if(this.isRegistered(slider)) {
@@ -29,6 +30,10 @@ export class ConfigService {
 
   getSliderByType(type: SliderType) {
     return this.sliders.find(s => s.type === type);
+  }
+
+  getMaxAmountOfSlider(): number {
+    return this.sliderMaxAmount;
   }
 
   private isRegistered(slider: SliderComponent): boolean {
