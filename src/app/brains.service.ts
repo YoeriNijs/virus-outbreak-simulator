@@ -83,7 +83,7 @@ export class BrainsService {
   private calculatePriorProbability(input: string): number {
     const obj = this.frequency.find(v => v.key === input);
     if(!obj || !obj.output) {
-      return 0.0;
+      return 0;
     }
     return obj.output.length / this.frequency.length;
   }
