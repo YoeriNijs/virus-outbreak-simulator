@@ -9,7 +9,7 @@
   </tbody>
 </table>
 
-<div class="stats" *ngIf="state === 'start' || state === 'stop'">
+<div class="stats" *ngIf="state === 'start' || state === 'restart' || state === 'stop'">
   <p>Cycle: {{ getCycle() }}</p>
   <p>Infected: {{ getNumberInfected() }}</p>
   <p>Cured: {{ getNumberOfCured() }}</p>
