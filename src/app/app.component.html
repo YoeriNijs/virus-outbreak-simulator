@@ -11,7 +11,7 @@
     <button *ngIf="currentState === 'stop'" (click)="restart()">Restart</button>
     <button *ngIf="currentState === 'stop' || currentState === 'restart'" (click)="reset()">Reset</button>
 
-    <p>Estimated number of deaths: {{ currentPrediction }}</p>
+    <p>Predicted number of deaths: {{ currentPrediction }}</p>
 
     <div class="legend">
         <h3>Legend</h3>
