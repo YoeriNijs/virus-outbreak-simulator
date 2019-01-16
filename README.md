@@ -20,3 +20,6 @@ As God, you can play with some initial parameters, such as:
 # More
 - [Stackblitz](https://stackblitz.com/edit/angular-stgen7) - Demo, may not be up to date
 - [www.analyticsvidhya.com](https://www.analyticsvidhya.com/blog/2017/09/naive-bayes-explained/) - More on Naive Bayes
+
+# Ideas
+- Implementing 'water', so one has influence on how fast the virus spreads itself.
